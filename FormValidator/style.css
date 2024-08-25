@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: rgb(233, 233, 233);
+}
+
+.wrapper {
+	width: 440px;
+	background-color: #fff;
+	box-shadow: 0 0 10px #000;
+	border-radius: 8px;
+}
+
+form {
+	padding: 40px;
+	font-size: 20px;
+}
+h1 {
+	margin-bottom: 30px;
+	text-align: center;
+	transition: color 0.3s;
+}
+h1:hover {
+	color: #c6ff42;
+}
+.form-box {
+	margin-bottom: 15px;
+}
+.form-box label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.form-box input {
+	width: 100%;
+	padding: 10px;
+	font-style: 16px;
+	border: none;
+	border-bottom: 1px solid #c6ff42;
+}
+.form-box.error input {
+	border-bottom: 1px solid tomato;
+}
+.form-box .error-text {
+	margin: 5px 0 0 10px;
+	font-size: 16px;
+	color: tomato;
+	visibility: hidden;
+}
+.form-box.error .error-text {
+	visibility: visible;
+}
+.control-buttons {
+	display: flex;
+	justify-content: flex-end;
+}
+.send,
+.clear,
+.close {
+	display: block;
+	padding: 10px 0;
+	margin-left: 10px;
+	width: 50%;
+	font-style: 18px;
+	background-color: #c6ff42;
+	color: #000;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.send:hover,
+.clear:hover,
+.close:hover {
+	background-color: #bbf438;
+}
+.popup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: -300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 200px;
+	background: #fff;
+	border-radius: 8px;
+	border: 2px solid black;
+	transition: top 0.5s;
+}
+.popup p {
+	font-size: 28px;
+}
+.popup .close {
+	margin-top: 20px;
+}
+.show-popup {
+	top: 20%;
+}
