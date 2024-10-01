@@ -1,0 +1,50 @@
+body {
+	background-color: aliceblue;
+	padding: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+	color: cadetblue;
+	text-align: center;
+}
+.row {
+	display: flex;
+	width: 100%;
+}
+.column-left {
+	width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.column-right {
+	width: 60%;
+}
+
+#avatar-img {
+	height: 10em;
+	margin: 0.3em;
+	border-radius: 5em;
+}
+
+.user-profile {
+	margin: auto;
+	padding: 0.5em;
+	width: 50em;
+	height: 11em;
+	background-color: white;
+	border-radius: 0.4em;
+	color: cadetblue;
+}
+#full-name {
+	font-size: 2em;
+	font-weight: bold;
+}
+#username {
+	font-size: 1.5em;
+}
+
+#user-details {
+	margin-top: 1em;
+	font-size: 1.5em;
+	color: teal;
+}
