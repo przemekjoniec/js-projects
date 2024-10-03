@@ -1,0 +1,13 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+textarea {
+	width: 50%;
+	height: 40vh;
+}
+div{
+    font-size: 36px;
+}
